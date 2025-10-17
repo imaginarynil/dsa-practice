@@ -1,8 +1,6 @@
 package org.example.linked_lists;
 
 public class delete_middle_node {
-    // 1 > *2 > 3 > 4 > 5
-    // how to delete 2?
     static void solve(LinkedList list, ListNode node) {
         ListNode p1 = node, p2 = node.next;
         while (p1 != null) {

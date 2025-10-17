@@ -1,6 +1,6 @@
 package org.example.arrays_and_strings;
 import java.util.*;
-// ok
+
 public class is_unique {
     public static boolean solve(String input) {
         Hashtable<Character, Integer> ht = new Hashtable<>();

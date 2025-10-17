@@ -2,9 +2,6 @@ package org.example.linked_lists;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
-// with temp buffer
-// without temp buffer
-
 class remove_dups_testcase {
     public LinkedList input;
     public LinkedList output;
@@ -17,9 +14,6 @@ class remove_dups_testcase {
         this.output = output;
     }
 }
-
-// unfinished
-// struggled
 
 /**
  * insight
@@ -48,9 +42,7 @@ public class remove_dups {
             currNode = currNode.next;
         }
     }
-
-    // 3 3
-    // 1 3 3
+    
     static void book_solution_no_buffer(LinkedList list) {
         ListNode p1 = list.getHead();
         ListNode p2;

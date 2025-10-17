@@ -48,8 +48,15 @@ public class sum_lists {
     }
 
     static void main(){
-        LinkedList list1 = new LinkedList(new int[]{9,9,9});
-        LinkedList list2 = new LinkedList(new int[]{5,9,2});
+//        LinkedList list1 = new LinkedList(new int[]{9,9,9});
+//        LinkedList list2 = new LinkedList(new int[]{5,9,2});
+
+        // follow up
+        LinkedList list1 = new LinkedList(new int[]{6,1,7});
+        list1.reverse();
+        LinkedList list2 = new LinkedList(new int[]{2,9,5});
+        list2.reverse();
+
         System.out.println(solve(list1, list2));
     }
 }

@@ -1,7 +1,7 @@
 package org.example.arrays_and_strings;
 import java.lang.Math;
 import java.util.Arrays;
-// ok
+
 public class one_away {
     static boolean solve(String str_1, String str_2) {
         if(Math.abs(str_1.length() - str_2.length()) > 1) {

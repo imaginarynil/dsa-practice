@@ -14,8 +14,6 @@ public class return_kth_to_last {
         return i;
     }
 
-    // 1 2 3
-
     static ListNode book_solution_iterative(LinkedList list, int k) {
         ListNode p1 = list.getHead();
         ListNode p2 = p1;

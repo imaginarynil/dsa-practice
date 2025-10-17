@@ -50,6 +50,7 @@ public class partition {
 //        solve(list, x);
 //        list.print();
 
+        list.print();
         book_solution(list, x).print();
     }
 }
