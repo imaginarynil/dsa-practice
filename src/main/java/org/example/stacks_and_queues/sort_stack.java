@@ -1,7 +1,7 @@
 package org.example.stacks_and_queues;
 
-import org.example.linked_lists.LinkedList;
 import org.example.linked_lists.ListNode;
+import java.util.Stack;
 
 import java.util.EmptyStackException;
 
@@ -51,14 +51,49 @@ class SortStack {
     }
 }
 
+class SortStackBookSolution {
+    Stack<Integer> stack = new Stack<>();
+
+    public void sort() {
+        Stack<Integer> tmpStack = new Stack<>();
+        while(!this.stack.isEmpty()) {
+            int top = this.stack.pop();
+            while(!tmpStack.isEmpty() && tmpStack.peek() > top) {
+                this.stack.push(tmpStack.pop());
+            }
+            tmpStack.push(top);
+        }
+        while(!tmpStack.isEmpty()) {
+            this.stack.push(tmpStack.pop());
+        }
+    }
+
+    public void push(int data) {
+        this.stack.push(data);
+    }
+
+    public int pop() {
+        return this.stack.pop();
+    }
+
+    public int peek() {
+        return this.stack.peek();
+    }
+
+    public boolean isEmpty() {
+        return this.stack.isEmpty();
+    }
+}
+
 public class sort_stack {
     static void solve(){
-        var sortStack = new SortStack();
+        var sortStack = new SortStackBookSolution();
         sortStack.push(1);
         sortStack.push(2);
         sortStack.push(3);
         sortStack.push(4);
         sortStack.push(5);
+        sortStack.sort();
         int peek = sortStack.peek();
         int pop = sortStack.pop();
         boolean isEmpty = sortStack.isEmpty();
