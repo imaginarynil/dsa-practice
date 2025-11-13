@@ -1,6 +1,6 @@
 package org.example.trees_and_graphs;
 
-class ValidateBstSolution {
+class ValidateBst {
     public boolean isBst = false;
 
     void solve(BinaryTree.Node node) {
@@ -22,7 +22,7 @@ class ValidateBstSolution {
 
 public class validate_bst {
     static boolean solve(BinaryTree bt) {
-        var solution = new ValidateBstSolution();
+        var solution = new ValidateBst();
         solution.solve(bt.getRoot());
         return solution.isBst;
     }

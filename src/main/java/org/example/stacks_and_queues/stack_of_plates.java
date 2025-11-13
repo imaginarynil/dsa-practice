@@ -55,21 +55,79 @@ class SetOfStacks {
     }
 }
 
+class SetOfStacksBookSolution {
+    ArrayList<org.example.stacks_and_queues.Stack> stacks = new ArrayList<>();
+
+    private int capacity;
+
+    public SetOfStacksBookSolution(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public org.example.stacks_and_queues.Stack getLastStack() {
+        if (this.stacks.size() == 0) {
+            return null;
+        }
+        return this.stacks.get(stacks.size() - 1);
+    }
+
+    public void push(int data) {
+        var stack = this.getLastStack();
+        if (stack != null && !stack.isFull()) {
+            stack.push(data);
+            return;
+        }
+        var newStack = new org.example.stacks_and_queues.Stack(this.capacity);
+        newStack.push(data);
+        this.stacks.add(newStack);
+    }
+
+    public int pop() {
+        var stack = this.getLastStack();
+        if (stack == null) {
+            throw new EmptyStackException();
+        }
+        int data = stack.pop();
+        if (stack.isEmpty()) {
+            this.stacks.remove(this.stacks.size() - 1);
+        }
+        return data;
+    }
+
+    public int popAt(int index, boolean popTop) {
+        var stack = this.stacks.get(index);
+        int removedItem;
+        if (popTop) {
+            removedItem = stack.pop();
+        } else {
+            removedItem = stack.removeBottom();
+        }
+        if (stack.isEmpty()) {
+            this.stacks.remove(index);
+        } else if (this.stacks.size() - 1 > index) {
+            int data = this.popAt(index + 1, false);
+            stack.push(data);
+        }
+        return removedItem;
+    }
+
+    public boolean isEmpty() {
+        var stack = this.getLastStack();
+        return stack == null || stack.isEmpty();
+    }
+}
+
 public class stack_of_plates {
     static void solve(int[] arr) {
-        SetOfStacks ss = new SetOfStacks(4);
+        var ss = new SetOfStacksBookSolution(3);
         for (int el : arr) {
             ss.push(el);
         }
-        for(int i = 0; i < 4; i++) {
-//            ss.pop();
-            ss.popAt(1);
-        }
-//        int x = ss.popAt(1);
+        ss.popAt(0, true);
     }
 
     static void main() {
-        int[] arr = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+        int[] arr = new int[]{3, 2, 1, 6, 5, 4, 7};
         solve(arr);
     }
 }

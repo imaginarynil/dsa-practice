@@ -16,10 +16,6 @@ public class BinaryTree {
     private Node root = null;
     private int maxDepth = 0;
 
-    public BinaryTree() {
-
-    }
-
     // assumption: root is established
     public Node _add(Node node, int data) {
         if (node == null) {
