@@ -5,10 +5,10 @@ public class flood_fill {
         if (sr < 0 || sr >= rowCount || sc < 0 || sc >= colCount) {
             return;
         }
-        if(image[sr][sc] != srcColor) {
+        if (image[sr][sc] != srcColor) {
             return;
         }
-        if(visited[sr][sc]) {
+        if (visited[sr][sc]) {
             return;
         }
         image[sr][sc] = dstColor;
@@ -21,7 +21,7 @@ public class flood_fill {
 
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         boolean[][] visited = new boolean[image.length][image[0].length];
-        if(image[sr][sc] == color) {
+        if (image[sr][sc] == color) {
             return image;
         }
         _floodFill(image, visited, sr, sc, image.length, image[0].length, image[sr][sc], color);

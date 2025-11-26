@@ -9,7 +9,7 @@ public class two_sum {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int diff = target - nums[i];
-            if(map.containsKey(diff)) {
+            if (map.containsKey(diff)) {
                 result[0] = map.get(diff);
                 result[1] = i;
                 return result;
@@ -35,8 +35,8 @@ public class two_sum {
 //    }
 
     void main() {
-        var x = twoSum(new int[]{2,7,11,15}, 9);
-        x = twoSum(new int[]{3,2,4}, 6);
-        x = twoSum(new int[]{3,3}, 6);
+        var x = twoSum(new int[]{2, 7, 11, 15}, 9);
+        x = twoSum(new int[]{3, 2, 4}, 6);
+        x = twoSum(new int[]{3, 3}, 6);
     }
 }

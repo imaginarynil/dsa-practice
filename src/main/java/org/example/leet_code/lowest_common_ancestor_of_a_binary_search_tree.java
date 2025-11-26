@@ -1,21 +1,8 @@
 package org.example.leet_code;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
 
 public class lowest_common_ancestor_of_a_binary_search_tree {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
     public boolean solve(ArrayList<TreeNode> path, TreeNode root, int target) {
         if (root == null) {
             return false;
@@ -90,5 +77,15 @@ public class lowest_common_ancestor_of_a_binary_search_tree {
         root.right.right = new TreeNode(8);
         TreeNode x;
         x = lowestCommonAncestor_Optimal(root, p, q);
+    }
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }

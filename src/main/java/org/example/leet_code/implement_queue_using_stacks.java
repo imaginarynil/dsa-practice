@@ -16,20 +16,20 @@ class MyQueue {
     }
 
     void transfer() {
-        while(!this.s1.isEmpty()) {
+        while (!this.s1.isEmpty()) {
             this.s2.push(this.s1.pop());
         }
     }
 
     public int pop() {
-        if(this.s2.isEmpty()) {
+        if (this.s2.isEmpty()) {
             this.transfer();
         }
         return this.s2.pop();
     }
 
     public int peek() {
-        if(this.s2.isEmpty()) {
+        if (this.s2.isEmpty()) {
             this.transfer();
         }
         return this.s2.peek();

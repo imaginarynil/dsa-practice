@@ -1,21 +1,8 @@
 package org.example.leet_code;
 
 public class invert_binary_tree {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
     public TreeNode invertTree(TreeNode root) {
-        if(root == null) {
+        if (root == null) {
             return root;
         }
         TreeNode node = root.left;
@@ -26,7 +13,7 @@ public class invert_binary_tree {
         return root;
     }
 
-    public void main() {
+    void main() {
         TreeNode root = new TreeNode(4);
         root.left = new TreeNode(2);
         root.left.left = new TreeNode(1);
@@ -35,5 +22,24 @@ public class invert_binary_tree {
         root.right.left = new TreeNode(6);
         root.right.right = new TreeNode(9);
         invertTree(root);
+    }
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 }

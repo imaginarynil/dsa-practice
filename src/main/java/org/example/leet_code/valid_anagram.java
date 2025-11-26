@@ -7,7 +7,7 @@ public class valid_anagram {
     Map<Integer, Integer> buildCharMap(String s) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
-            int codePoint = (int) s.charAt(i);
+            int codePoint = s.charAt(i);
             if (map.containsKey(codePoint)) {
                 map.put(codePoint, map.get(codePoint) + 1);
             } else {

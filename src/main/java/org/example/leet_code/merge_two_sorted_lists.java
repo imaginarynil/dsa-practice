@@ -1,23 +1,6 @@
 package org.example.leet_code;
 
 public class merge_two_sorted_lists {
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     public ListNode addNode(ListNode head, int val) {
         ListNode newNode = new ListNode(val);
         if (head == null) {
@@ -35,6 +18,29 @@ public class merge_two_sorted_lists {
     public ListNode join(ListNode node1, ListNode node2) {
         node1.next = node2;
         return node1;
+    }
+
+    // my solution
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode result = null;
+        while (list1 != null && list2 != null) {
+            if (list1.val <= list2.val) {
+                result = addNode(result, list1.val);
+                list1 = list1.next;
+            } else {
+                result = addNode(result, list2.val);
+                list2 = list2.next;
+            }
+        }
+        while (list1 != null) {
+            result = addNode(result, list1.val);
+            list1 = list1.next;
+        }
+        while (list2 != null) {
+            result = addNode(result, list2.val);
+            list2 = list2.next;
+        }
+        return result;
     }
 
     // optimal solution (lookup)
@@ -61,29 +67,6 @@ public class merge_two_sorted_lists {
 //        return result.next;
 //    }
 
-    // my solution
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode result = null;
-        while (list1 != null && list2 != null) {
-            if (list1.val <= list2.val) {
-                result = addNode(result, list1.val);
-                list1 = list1.next;
-            } else {
-                result = addNode(result, list2.val);
-                list2 = list2.next;
-            }
-        }
-        while (list1 != null) {
-            result = addNode(result, list1.val);
-            list1 = list1.next;
-        }
-        while (list2 != null) {
-            result = addNode(result, list2.val);
-            list2 = list2.next;
-        }
-        return result;
-    }
-
     void main() {
         ListNode l1 = null;
         ListNode l2 = null;
@@ -96,5 +79,22 @@ public class merge_two_sorted_lists {
             l2 = addNode(l2, arr2[i]);
         }
         var result = mergeTwoLists(l1, l2);
+    }
+
+    public class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
     }
 }

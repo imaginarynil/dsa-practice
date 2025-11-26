@@ -1,57 +1,38 @@
 package org.example.leet_code;
 
 public class balanced_binary_tree {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
+    int ERROR_CODE = -2;
 
     public int getHeight(TreeNode root) {
-        if(root == null) {
+        if (root == null) {
             return -1;
         }
         return Math.max(getHeight(root.left), getHeight(root.right)) + 1;
     }
 
     public boolean isBalanced(TreeNode root) {
-        if(root == null) {
+        if (root == null) {
             return true;
         }
-        if(Math.abs(getHeight(root.left) - getHeight(root.right)) > 1) {
+        if (Math.abs(getHeight(root.left) - getHeight(root.right)) > 1) {
             return false;
         }
         return isBalanced(root.left) && isBalanced(root.right);
     }
 
-    int ERROR_CODE = -2;
-
     int _isBalanced_Optimal(TreeNode root) {
-        if(root == null) {
+        if (root == null) {
             return -1;
         }
         int left = _isBalanced_Optimal(root.left);
-        if(left == ERROR_CODE) {
+        if (left == ERROR_CODE) {
             return ERROR_CODE;
         }
         int right = _isBalanced_Optimal(root.right);
-        if(right == ERROR_CODE) {
+        if (right == ERROR_CODE) {
             return ERROR_CODE;
         }
-        if(Math.abs(left - right) > 1) {
+        if (Math.abs(left - right) > 1) {
             return ERROR_CODE;
         }
         return Math.max(_isBalanced_Optimal(root.left), _isBalanced_Optimal(root.right)) + 1;
@@ -59,10 +40,7 @@ public class balanced_binary_tree {
 
     public boolean isBalanced_Optimal(TreeNode root) {
         int result = _isBalanced_Optimal(root);
-        if(result == ERROR_CODE) {
-            return false;
-        }
-        return true;
+        return result != ERROR_CODE;
     }
 
     void main() {
@@ -92,5 +70,24 @@ public class balanced_binary_tree {
 
         boolean x;
         x = isBalanced(root);
+    }
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 }

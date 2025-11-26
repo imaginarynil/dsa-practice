@@ -6,9 +6,9 @@ import java.util.Map;
 public class valid_palindrome {
     public int getNumericValue(char c) {
         int val = Character.getNumericValue(c);
-        if(
+        if (
                 val >= Character.getNumericValue('a') && val <= Character.getNumericValue('z') ||
-                val >= Character.getNumericValue('0') && val <= Character.getNumericValue('9')
+                        val >= Character.getNumericValue('0') && val <= Character.getNumericValue('9')
         ) {
             return val;
         }
@@ -19,16 +19,16 @@ public class valid_palindrome {
         Map<Integer, Integer> map = new HashMap<>();
         char[] str = s.toCharArray();
         StringBuilder sb = new StringBuilder();
-        for(char c: str) {
+        for (char c : str) {
             int val = getNumericValue(c);
-            if(val == -1) {
+            if (val == -1) {
                 continue;
             }
             sb.append((char) val);
         }
         char[] cleanedStr = sb.toString().toCharArray();
-        for(int i = 0; i < cleanedStr.length / 2; i++) {
-            if(cleanedStr[i] != cleanedStr[cleanedStr.length - 1 - i]) {
+        for (int i = 0; i < cleanedStr.length / 2; i++) {
+            if (cleanedStr[i] != cleanedStr[cleanedStr.length - 1 - i]) {
                 return false;
             }
         }
@@ -38,16 +38,16 @@ public class valid_palindrome {
     public boolean isPalindrome_Optimal(String s) {
         StringBuilder sb = new StringBuilder();
 //        s = s.toLowerCase(); // alternative
-        for(char c: s.toCharArray()) {
-            if(Character.isLetterOrDigit(c)) {
+        for (char c : s.toCharArray()) {
+            if (Character.isLetterOrDigit(c)) {
                 sb.append(Character.toLowerCase(c));
             }
         }
         String str = sb.toString();
         int left = 0;
         int right = str.length() - 1;
-        while(left < right) {
-            if(str.charAt(left) != str.charAt(right)) {
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
                 return false;
             }
             left += 1;

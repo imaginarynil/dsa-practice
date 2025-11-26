@@ -18,9 +18,9 @@ public class valid_parentheses {
                 }
                 char top = stack.pop();
                 if (
-                    top == '(' && c != ')' ||
-                    top == '[' && c != ']' ||
-                    top == '{' && c != '}'
+                        top == '(' && c != ')' ||
+                                top == '[' && c != ']' ||
+                                top == '{' && c != '}'
                 ) {
                     return false;
                 }

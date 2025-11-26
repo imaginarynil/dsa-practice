@@ -1,29 +1,20 @@
 package org.example.leet_code;
 
 public class linked_list_cycle {
-    class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
-
     public boolean hasCycle(ListNode head) {
-        if(head == null) {
+        if (head == null) {
             return false;
         }
         ListNode p1 = head;
-        if(p1.next == null) {
+        if (p1.next == null) {
             return false;
         }
         ListNode p2 = head.next.next;
-        if(p2 == null) {
+        if (p2 == null) {
             return false;
         }
-        while(p1.next != null && p2 != null && p2.next != null) {
-            if(p1 == p2) {
+        while (p1.next != null && p2 != null && p2.next != null) {
+            if (p1 == p2) {
                 return true;
             }
             p1 = p1.next;
@@ -35,10 +26,10 @@ public class linked_list_cycle {
     public boolean hasCycle_Optimal(ListNode head) {
         ListNode p1 = head;
         ListNode p2 = head;
-        while(p2 != null && p2.next != null) {
+        while (p2 != null && p2.next != null) {
             p1 = p1.next;
             p2 = p2.next.next;
-            if(p1 == p2) {
+            if (p1 == p2) {
                 return true;
             }
         }
@@ -68,5 +59,15 @@ public class linked_list_cycle {
 
         boolean x;
         x = hasCycle_Optimal(head);
+    }
+
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
     }
 }
