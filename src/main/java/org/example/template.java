@@ -1,11 +1,11 @@
 package org.example;
 
 public class template {
-    static void solve() {
+    void solve() {
 
     }
 
-    static void main() {
+    void main() {
 
     }
 }
