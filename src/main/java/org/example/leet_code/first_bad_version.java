@@ -11,13 +11,13 @@ public class first_bad_version {
         int start = 1;
         int end = n;
         int result = -1;
-        while(start < end) {
+        while (start < end) {
             int mid = start + (end - start) / 2;
-            if(isBadVersion(mid)) {
+            if (isBadVersion(mid)) {
                 result = mid;
                 end = mid;
             }
-            if(!isBadVersion(mid)) {
+            if (!isBadVersion(mid)) {
                 start = mid + 1;
             }
         }
@@ -27,9 +27,9 @@ public class first_bad_version {
     public int firstBadVersion_Optimal(int n) {
         int l = 1;
         int r = n;
-        while(l < r) {
+        while (l < r) {
             int m = l + (r - l) / 2;
-            if(isBadVersion(m)) {
+            if (isBadVersion(m)) {
                 r = m;
             } else {
                 l = m + 1;
