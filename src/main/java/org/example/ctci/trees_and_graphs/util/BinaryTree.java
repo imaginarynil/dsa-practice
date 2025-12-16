@@ -1,4 +1,4 @@
-package org.example.ctci.trees_and_graphs;
+package org.example.ctci.trees_and_graphs.util;
 
 public class BinaryTree {
     private Node root = null;
@@ -79,12 +79,12 @@ public class BinaryTree {
         _printPreOrder(this.root);
     }
 
-    class Node {
-        int data;
-        int depth;
-        int height;
-        Node left = null;
-        Node right = null;
+    public class Node {
+        public int data;
+        public int depth;
+        public int height;
+        public Node left = null;
+        public Node right = null;
 
         public Node(int data) {
             this.data = data;

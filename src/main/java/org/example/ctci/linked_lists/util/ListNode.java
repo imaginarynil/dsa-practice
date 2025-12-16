@@ -1,4 +1,4 @@
-package org.example.ctci.linked_lists;
+package org.example.ctci.linked_lists.util;
 
 public class ListNode {
     public int data;
