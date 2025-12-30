@@ -1,5 +1,8 @@
 package org.example.ctci.linked_lists;
 
+import org.example.ctci.linked_lists.util.LinkedList;
+import org.example.ctci.linked_lists.util.ListNode;
+
 public class partition {
     void solve(LinkedList list, int x) {
         ListNode p1 = null, p2 = list.getHead(), p3 = p2.next;

@@ -1,6 +1,6 @@
 package org.example.ctci.stacks_and_queues;
 
-import org.example.ctci.linked_lists.ListNode;
+import org.example.ctci.linked_lists.util.ListNode;
 
 import java.util.EmptyStackException;
 import java.util.Stack;

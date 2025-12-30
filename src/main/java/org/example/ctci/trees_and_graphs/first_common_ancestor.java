@@ -1,5 +1,7 @@
 package org.example.ctci.trees_and_graphs;
 
+import org.example.ctci.trees_and_graphs.util.BinaryTree;
+
 public class first_common_ancestor {
     void firstCommonAncestor(BinaryTree bt) {
         var solution = new FirstCommonAncestor();

@@ -1,5 +1,8 @@
 package org.example.ctci.linked_lists;
 
+import org.example.ctci.linked_lists.util.LinkedList;
+import org.example.ctci.linked_lists.util.ListNode;
+
 public class loop_detection {
     ListNode findMeetingPoint(ListNode p1, ListNode p2) {
         while (p2 != null && p2.next != null) { // note

@@ -1,5 +1,8 @@
 package org.example.ctci.linked_lists;
 
+import org.example.ctci.linked_lists.util.LinkedList;
+import org.example.ctci.linked_lists.util.ListNode;
+
 public class delete_middle_node {
     void solve(LinkedList list, ListNode node) {
         ListNode p1 = node, p2 = node.next;

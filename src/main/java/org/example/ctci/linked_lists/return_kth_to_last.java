@@ -1,5 +1,8 @@
 package org.example.ctci.linked_lists;
 
+import org.example.ctci.linked_lists.util.LinkedList;
+import org.example.ctci.linked_lists.util.ListNode;
+
 public class return_kth_to_last {
     private ListNode result = null;
 
