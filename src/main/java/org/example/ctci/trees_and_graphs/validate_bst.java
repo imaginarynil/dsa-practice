@@ -1,44 +1,53 @@
 package org.example.ctci.trees_and_graphs;
 
+import org.example.ctci.trees_and_graphs.util.TreeNode;
+
 public class validate_bst {
-    boolean solve(BinaryTree bt) {
-        var solution = new ValidateBst();
-        solution.solve(bt.getRoot());
-        return solution.isBst;
+    void _validateBst_Attempt_1(TreeNode root, boolean[] result) {
+        if (root == null) {
+            return;
+        }
+        if ((root.left != null && root.val <= root.left.val) || (root.right != null && root.val >= root.right.val)) {
+            result[0] = false;
+        }
+        _validateBst_Attempt_1(root.left, result);
+        _validateBst_Attempt_1(root.right, result);
+    }
+
+    // error: [5,4,6,null,null,3,7]
+    boolean validateBst_Attempt_1(TreeNode root) {
+        boolean[] result = new boolean[]{true};
+        _validateBst_Attempt_1(root, result);
+        return result[0];
+    }
+
+    boolean _validateBst_Solution_2(TreeNode root, Integer min, Integer max) {
+        if (root == null) {
+            return true;
+        }
+        if ((min != null && root.val <= min) || (max != null && root.val > max)) {
+            return false;
+        }
+        return _validateBst_Solution_2(root.left, min, root.val) && _validateBst_Solution_2(root.right, root.val, max);
+    }
+
+    boolean validateBst_Solution_2(TreeNode root) {
+        return _validateBst_Solution_2(root, null, null);
     }
 
     void main() {
-        BinaryTree bt = new BinaryTree();
-        bt.add(4);
-        bt.add(2);
-        bt.add(7);
-        bt.add(1);
-        bt.add(3);
-        bt.add(5);
-        bt.add(8);
-        bt.add(0);
-        bt.add(6);
-        bt.add(9);
-        System.out.println(solve(bt));
-    }
+        TreeNode root;
+//        root = new TreeNode(2);
+//        root.left = new TreeNode(1);
+//        root.right = new TreeNode(3);
 
-    class ValidateBst {
-        public boolean isBst = false;
+        root = new TreeNode(5);
+        root.left = new TreeNode(1);
+        root.right = new TreeNode(4);
+        root.right.left = new TreeNode(3);
+        root.right.right = new TreeNode(6);
 
-        void solve(BinaryTree.Node node) {
-            if (node != null) {
-                if (node.left != null && node.right != null) {
-                    this.isBst = node.left.data <= node.data && node.right.data > node.data;
-                }
-                if (node.left != null) {
-                    this.isBst = node.left.data <= node.data;
-                }
-                if (node.right != null) {
-                    this.isBst = node.right.data > node.data;
-                }
-                solve(node.left);
-                solve(node.right);
-            }
-        }
+        boolean x;
+        x = validateBst_Solution_2(root);
     }
 }
