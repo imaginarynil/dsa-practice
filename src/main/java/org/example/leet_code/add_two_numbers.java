@@ -1,5 +1,7 @@
 package org.example.leet_code;
 
+import org.example.common.ListNode;
+
 public class add_two_numbers {
     public LinkedList toLinkedList(ListNode node) {
         LinkedList list = new LinkedList();
@@ -43,7 +45,7 @@ public class add_two_numbers {
         return result;
     }
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public ListNode addTwoNumbers_Attempt_1(ListNode l1, ListNode l2) {
         LinkedList list1 = toLinkedList(l1);
         LinkedList list2 = toLinkedList(l2);
         normalize(list1, list2);
@@ -72,33 +74,43 @@ public class add_two_numbers {
         return result.next;
     }
 
+    public ListNode addTwoNumbers_Optimal_No_Head(ListNode l1, ListNode l2) {
+        int sum;
+        int carry = 0;
+        ListNode result = null;
+        ListNode p = null;
+        while (l1 != null || l2 != null) {
+            int l1Val = l1 == null ? 0 : l1.val;
+            int l2Val = l2 == null ? 0 : l2.val;
+            sum = l1Val + l2Val + carry;
+            int digit = sum % 10;
+            if (result == null) {
+                result = new ListNode(digit);
+                p = result;
+            } else {
+                p.next = new ListNode(digit);
+                p = p.next;
+            }
+            carry = sum / 10;
+            l1 = l1 == null ? null : l1.next;
+            l2 = l2 == null ? null : l2.next;
+        }
+        if (carry > 0) {
+            p.next = new ListNode(carry);
+        }
+        return result;
+    }
+
     void main() {
         ListNode x;
 
-//        ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
-//        ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
-//        x = addTwoNumbers_Optimal(l1, l2);
-
-        ListNode l1 = new ListNode(9, new ListNode(9, new ListNode(9)));
-        ListNode l2 = new ListNode(9, new ListNode(9));
+        ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
+        ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
         x = addTwoNumbers_Optimal(l1, l2);
-    }
 
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
+        l1 = new ListNode(9, new ListNode(9, new ListNode(9)));
+        l2 = new ListNode(9, new ListNode(9));
+        x = addTwoNumbers_Optimal(l1, l2);
     }
 
     class LinkedList {
