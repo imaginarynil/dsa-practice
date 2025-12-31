@@ -1,5 +1,7 @@
 package org.example.ctci.linked_lists.util;
 
+import org.example.common.ListNode;
+
 public class LinkedList {
     private ListNode head = null;
     private ListNode tail = null;
@@ -58,7 +60,7 @@ public class LinkedList {
     public ListNode getNode(int data) {
         ListNode node = this.head;
         while (node != null) {
-            if (node.data == data) {
+            if (node.val == data) {
                 return node;
             }
             node = node.next;
@@ -82,7 +84,7 @@ public class LinkedList {
         ListNode p1 = this.head;
         ListNode p2 = otherList.getHead();
         while (p1 != null && p2 != null) {
-            if (p1.data != p2.data) {
+            if (p1.val != p2.val) {
                 return false;
             }
             p1 = p1.next;
@@ -109,7 +111,7 @@ public class LinkedList {
     public void print() {
         ListNode currentNode = this.head;
         while (currentNode != null) {
-            System.out.printf("%d ", currentNode.data);
+            System.out.printf("%d ", currentNode.val);
             currentNode = currentNode.next;
         }
         System.out.println();

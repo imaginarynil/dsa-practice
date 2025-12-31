@@ -1,7 +1,7 @@
 package org.example.ctci.linked_lists;
 
+import org.example.common.ListNode;
 import org.example.ctci.linked_lists.util.LinkedList;
-import org.example.ctci.linked_lists.util.ListNode;
 
 public class loop_detection {
     ListNode findMeetingPoint(ListNode p1, ListNode p2) {
@@ -44,7 +44,7 @@ public class loop_detection {
 //        ListNode corruptedNode = list.getNode(0);
 //        corruptedNode.next = loopStartNode;
         ListNode result = loopDetection_Solution(list);
-        System.out.println(result != null ? result.data : null);
+        System.out.println(result != null ? result.val : null);
 
 //        LinkedList list = new LinkedList(new int[]{1});
 //        ListNode node1 = list.getNode(1);

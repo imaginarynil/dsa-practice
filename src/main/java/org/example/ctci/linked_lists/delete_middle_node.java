@@ -1,7 +1,7 @@
 package org.example.ctci.linked_lists;
 
+import org.example.common.ListNode;
 import org.example.ctci.linked_lists.util.LinkedList;
-import org.example.ctci.linked_lists.util.ListNode;
 
 public class delete_middle_node {
     void solve(LinkedList list, ListNode node) {
@@ -10,7 +10,7 @@ public class delete_middle_node {
             if (p2 == null) {
                 return;
             }
-            p1.data = p2.data;
+            p1.val = p2.val;
             if (p2.next == null) {
                 p1.next = null;
                 return;
@@ -23,7 +23,7 @@ public class delete_middle_node {
     void deleteMiddleNode_Solution(LinkedList list, ListNode node) {
         if (node == null || node.next == null) return;
         ListNode next = node.next;
-        node.data = next.data;
+        node.val = next.val;
         node.next = next.next;
     }
 

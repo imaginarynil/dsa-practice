@@ -1,4 +1,4 @@
-package org.example.ctci.trees_and_graphs.util;
+package org.example.common;
 
 public class TreeNode {
     public TreeNode left;

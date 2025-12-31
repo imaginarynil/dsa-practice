@@ -13,7 +13,7 @@ public class majority_element {
             } else {
                 map.put(num, map.get(num) + 1);
             }
-            if(map.get(num) > max) {
+            if (map.get(num) > max) {
                 max = map.get(num);
                 result = num;
             }

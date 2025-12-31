@@ -1,7 +1,7 @@
 package org.example.ctci.linked_lists;
 
+import org.example.common.ListNode;
 import org.example.ctci.linked_lists.util.LinkedList;
-import org.example.ctci.linked_lists.util.ListNode;
 
 public class intersection {
     ListNode advancePointer(LinkedList list, int x) {
@@ -49,6 +49,6 @@ public class intersection {
         list1.print();
         list2.print();
         ListNode result = solve(list1, list2);
-        System.out.println(result == null ? null : result.data);
+        System.out.println(result == null ? null : result.val);
     }
 }

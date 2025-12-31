@@ -1,5 +1,7 @@
 package org.example.leet_code;
 
+import org.example.common.TreeNode;
+
 public class balanced_binary_tree {
     int ERROR_CODE = -2;
 
@@ -70,24 +72,5 @@ public class balanced_binary_tree {
 
         boolean x;
         x = isBalanced(root);
-    }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }

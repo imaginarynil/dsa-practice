@@ -23,17 +23,17 @@ public class climbing_stairs {
     }
 
     /*
-    * https://www.youtube.com/watch?v=Y0lT9Fck7qI
-    * to reach from n to n, there is 1 way
-    * from n - 1 to n there is 1 way
-    * from n - 2 to n there are count(n) + count(n - 1)
-    * fibonacci
-    * */
+     * https://www.youtube.com/watch?v=Y0lT9Fck7qI
+     * to reach from n to n, there is 1 way
+     * from n - 1 to n there is 1 way
+     * from n - 2 to n there are count(n) + count(n - 1)
+     * fibonacci
+     * */
     public int climbStairs_Solution(int n) {
         int one = 1, two = 1;
         int tmp;
         // n = 5, 2 first positions are used, n - 2 = 3 iterations
-        for(int i = 0; i < n - 1; i++) {
+        for (int i = 0; i < n - 1; i++) {
             tmp = one;
             one = one + two;
             two = tmp;

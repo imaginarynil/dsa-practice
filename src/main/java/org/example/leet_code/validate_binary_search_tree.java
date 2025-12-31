@@ -1,5 +1,7 @@
 package org.example.leet_code;
 
+import org.example.common.TreeNode;
+
 public class validate_binary_search_tree {
     public boolean _isValidBST(TreeNode root, Integer min, Integer max) {
         if (root == null) {
@@ -13,24 +15,5 @@ public class validate_binary_search_tree {
 
     public boolean isValidBST(TreeNode root) {
         return _isValidBST(root, null, null);
-    }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }

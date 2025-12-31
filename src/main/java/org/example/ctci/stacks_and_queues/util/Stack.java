@@ -1,4 +1,4 @@
-package org.example.ctci.stacks_and_queues;
+package org.example.ctci.stacks_and_queues.util;
 
 import java.util.EmptyStackException;
 

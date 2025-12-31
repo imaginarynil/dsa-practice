@@ -1,5 +1,7 @@
 package org.example.algorithm;
 
+import org.example.common.TreeNode;
+
 public class binary_search_tree {
     TreeNode createTree(TreeNode root, int val) {
         if (root == null) return new TreeNode(val);
@@ -16,16 +18,6 @@ public class binary_search_tree {
         TreeNode root = null;
         for (int x : arr) {
             root = createTree(root, x);
-        }
-    }
-
-    class TreeNode {
-        TreeNode left;
-        TreeNode right;
-        int val;
-
-        public TreeNode(int val) {
-            this.val = val;
         }
     }
 }

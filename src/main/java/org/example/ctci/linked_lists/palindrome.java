@@ -1,7 +1,7 @@
 package org.example.ctci.linked_lists;
 
+import org.example.common.ListNode;
 import org.example.ctci.linked_lists.util.LinkedList;
-import org.example.ctci.linked_lists.util.ListNode;
 
 import java.util.ArrayList;
 import java.util.Stack;
@@ -9,11 +9,11 @@ import java.util.Stack;
 public class palindrome {
     void createReversedList(LinkedList newList, ListNode node) {
         if (node.next == null) {
-            newList.add(node.data);
+            newList.add(node.val);
             return;
         }
         createReversedList(newList, node.next);
-        newList.add(node.data);
+        newList.add(node.val);
     }
 
     boolean solve(LinkedList list) {
@@ -24,7 +24,7 @@ public class palindrome {
         ListNode p1 = list.getHead();
         ListNode p2 = newList.getHead();
         while (p1 != null && p2 != null) {
-            if (p1.data != p2.data) {
+            if (p1.val != p2.val) {
                 return false;
             }
             p1 = p1.next;
@@ -45,7 +45,7 @@ public class palindrome {
         // 1 2 3 4 5
         // 1 2 3 4
         while (p2 != null && p2.next != null) {
-            stack.push(p1.data);
+            stack.push(p1.val);
             p1 = p1.next;
             p2 = p2.next.next;
         }
@@ -55,7 +55,7 @@ public class palindrome {
         }
         while (p1 != null) {
             int top = stack.pop();
-            if (p1.data != top) {
+            if (p1.val != top) {
                 return false;
             }
             p1 = p1.next;

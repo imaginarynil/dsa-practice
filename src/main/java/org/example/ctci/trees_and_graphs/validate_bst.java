@@ -1,6 +1,6 @@
 package org.example.ctci.trees_and_graphs;
 
-import org.example.ctci.trees_and_graphs.util.TreeNode;
+import org.example.common.TreeNode;
 
 public class validate_bst {
     void _validateBst_Attempt_1(TreeNode root, boolean[] result) {

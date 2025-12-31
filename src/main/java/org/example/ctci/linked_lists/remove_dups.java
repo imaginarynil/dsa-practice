@@ -1,7 +1,7 @@
 package org.example.ctci.linked_lists;
 
+import org.example.common.ListNode;
 import org.example.ctci.linked_lists.util.LinkedList;
-import org.example.ctci.linked_lists.util.ListNode;
 
 import java.util.ArrayList;
 
@@ -23,8 +23,8 @@ public class remove_dups {
         ListNode prevNode = null;
         ListNode currNode = list.getHead();
         while (currNode != null) {
-            if (!flag[currNode.data]) {
-                flag[currNode.data] = true;
+            if (!flag[currNode.val]) {
+                flag[currNode.val] = true;
                 prevNode = currNode; // move p1 when not flagged
             } else {
                 prevNode.next = currNode.next;
@@ -39,7 +39,7 @@ public class remove_dups {
         while (p1 != null) {
             p2 = p1;
             while (p2.next != null) {
-                if (p2.next.data == p1.data) {
+                if (p2.next.val == p1.val) {
                     p2.next = p2.next.next;
                 } else {
                     p2 = p2.next;

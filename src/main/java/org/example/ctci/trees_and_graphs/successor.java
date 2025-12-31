@@ -1,7 +1,5 @@
 package org.example.ctci.trees_and_graphs;
 
-import org.example.ctci.trees_and_graphs.util.TreeNodeBidirectional;
-
 public class successor {
     TreeNodeBidirectional successor(TreeNodeBidirectional root) {
         if (root == null) {
@@ -61,5 +59,16 @@ public class successor {
 
         TreeNodeBidirectional x;
         x = successor(target);
+    }
+
+    public class TreeNodeBidirectional {
+        public TreeNodeBidirectional parent;
+        public TreeNodeBidirectional left;
+        public TreeNodeBidirectional right;
+        public int val;
+
+        public TreeNodeBidirectional(int val) {
+            this.val = val;
+        }
     }
 }

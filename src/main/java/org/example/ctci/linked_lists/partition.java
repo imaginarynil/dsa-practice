@@ -1,16 +1,16 @@
 package org.example.ctci.linked_lists;
 
+import org.example.common.ListNode;
 import org.example.ctci.linked_lists.util.LinkedList;
-import org.example.ctci.linked_lists.util.ListNode;
 
 public class partition {
     void solve(LinkedList list, int x) {
         ListNode p1 = null, p2 = list.getHead(), p3 = p2.next;
-        if (p2.data < x) {
+        if (p2.val < x) {
             p1 = p2;
         }
         while (p3 != null) {
-            if (p3.data < x) {
+            if (p3.val < x) {
                 // move node to back
                 p2.next = p3.next;
                 if (p1 == null) {
@@ -34,11 +34,11 @@ public class partition {
         LinkedList result = new LinkedList();
         ListNode p = list.getHead();
         while (p != null) {
-            if (p.data < x) {
-                ListNode newHead = new ListNode(p.data);
+            if (p.val < x) {
+                ListNode newHead = new ListNode(p.val);
                 result.setHead(newHead);
             } else {
-                result.add(p.data);
+                result.add(p.val);
             }
             p = p.next;
         }

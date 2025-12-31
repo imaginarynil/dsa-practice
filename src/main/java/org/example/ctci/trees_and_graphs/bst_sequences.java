@@ -1,6 +1,6 @@
 package org.example.ctci.trees_and_graphs;
 
-import org.example.ctci.trees_and_graphs.util.TreeNode;
+import org.example.common.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -8,7 +8,7 @@ import java.util.LinkedList;
 public class bst_sequences {
     ArrayList<LinkedList<Integer>> bstSequences(TreeNode root) {
         ArrayList<LinkedList<Integer>> result = new ArrayList<>();
-        if(root == null) {
+        if (root == null) {
             result.add(new LinkedList<>());
             return result;
         }
@@ -16,8 +16,8 @@ public class bst_sequences {
         prefix.add(root.val);
         ArrayList<LinkedList<Integer>> leftSeq = bstSequences(root.left);
         ArrayList<LinkedList<Integer>> rightSeq = bstSequences(root.right);
-        for(LinkedList<Integer> leftList: leftSeq) {
-            for(LinkedList<Integer> rightList: rightSeq) {
+        for (LinkedList<Integer> leftList : leftSeq) {
+            for (LinkedList<Integer> rightList : rightSeq) {
                 ArrayList<LinkedList<Integer>> results = new ArrayList<>();
                 weave(results, leftList, rightList, prefix);
                 result.addAll(results);

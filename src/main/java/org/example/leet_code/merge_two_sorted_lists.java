@@ -1,5 +1,7 @@
 package org.example.leet_code;
 
+import org.example.common.ListNode;
+
 public class merge_two_sorted_lists {
     public ListNode addNode(ListNode head, int val) {
         ListNode newNode = new ListNode(val);
@@ -79,22 +81,5 @@ public class merge_two_sorted_lists {
             l2 = addNode(l2, arr2[i]);
         }
         var result = mergeTwoLists(l1, l2);
-    }
-
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 }

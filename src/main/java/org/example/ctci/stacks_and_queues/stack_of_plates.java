@@ -73,13 +73,13 @@ public class stack_of_plates {
 
     class SetOfStacks_Solution {
         private final int capacity;
-        ArrayList<org.example.ctci.stacks_and_queues.Stack> stacks = new ArrayList<>();
+        ArrayList<org.example.ctci.stacks_and_queues.util.Stack> stacks = new ArrayList<>();
 
         public SetOfStacks_Solution(int capacity) {
             this.capacity = capacity;
         }
 
-        public org.example.ctci.stacks_and_queues.Stack getLastStack() {
+        public org.example.ctci.stacks_and_queues.util.Stack getLastStack() {
             if (this.stacks.size() == 0) {
                 return null;
             }
@@ -92,7 +92,7 @@ public class stack_of_plates {
                 stack.push(data);
                 return;
             }
-            var newStack = new org.example.ctci.stacks_and_queues.Stack(this.capacity);
+            var newStack = new org.example.ctci.stacks_and_queues.util.Stack(this.capacity);
             newStack.push(data);
             this.stacks.add(newStack);
         }

@@ -1,7 +1,7 @@
 package org.example.ctci.trees_and_graphs;
 
+import org.example.common.TreeNode;
 import org.example.ctci.trees_and_graphs.util.BinaryTree;
-import org.example.ctci.trees_and_graphs.util.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

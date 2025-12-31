@@ -1,6 +1,6 @@
 package org.example.ctci.trees_and_graphs;
 
-import org.example.ctci.trees_and_graphs.util.TreeNode;
+import org.example.common.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -38,10 +38,7 @@ public class check_subtree {
             t1Index++;
         }
         // t2Arr is finished but t1Arr is not finished
-        if (i < t2Arr.size() && t1Index >= t1Arr.size()) {
-            return false;
-        }
-        return true;
+        return i >= t2Arr.size() || t1Index < t1Arr.size();
     }
 
     boolean checkSubtree_Attempt_1(TreeNode t1Root, TreeNode t2Root) {

@@ -1,7 +1,7 @@
 package org.example.ctci.linked_lists;
 
+import org.example.common.ListNode;
 import org.example.ctci.linked_lists.util.LinkedList;
-import org.example.ctci.linked_lists.util.ListNode;
 
 public class sum_lists {
     void normalize(LinkedList list1, LinkedList list2) {
@@ -21,7 +21,7 @@ public class sum_lists {
         ListNode p2 = list2.getHead();
         int carryOver = 0;
         while (p1 != null && p2 != null) {
-            int sum = p1.data + p2.data;
+            int sum = p1.val + p2.val;
             result.add((sum + carryOver) % 10);
             carryOver = sum / 10;
             p1 = p1.next;
@@ -38,7 +38,7 @@ public class sum_lists {
         int pow = 0;
         ListNode node = list.getHead();
         while (node != null) {
-            sum += node.data * Math.powExact(10, pow);
+            sum += node.val * Math.powExact(10, pow);
             node = node.next;
             pow += 1;
         }

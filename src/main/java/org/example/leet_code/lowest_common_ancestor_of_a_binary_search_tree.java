@@ -1,5 +1,7 @@
 package org.example.leet_code;
 
+import org.example.common.TreeNode;
+
 import java.util.ArrayList;
 
 public class lowest_common_ancestor_of_a_binary_search_tree {
@@ -77,15 +79,5 @@ public class lowest_common_ancestor_of_a_binary_search_tree {
         root.right.right = new TreeNode(8);
         TreeNode x;
         x = lowestCommonAncestor_Optimal(root, p, q);
-    }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }

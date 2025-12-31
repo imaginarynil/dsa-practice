@@ -1,7 +1,7 @@
 package org.example.ctci.trees_and_graphs;
 
 
-import org.example.ctci.trees_and_graphs.util.TreeNode;
+import org.example.common.TreeNode;
 
 public class check_balanced {
     int getHeight(TreeNode root) {

@@ -1,5 +1,7 @@
 package org.example.leet_code;
 
+import org.example.common.ListNode;
+
 public class linked_list_cycle {
     public boolean hasCycle(ListNode head) {
         if (head == null) {
@@ -59,15 +61,5 @@ public class linked_list_cycle {
 
         boolean x;
         x = hasCycle_Optimal(head);
-    }
-
-    class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
     }
 }

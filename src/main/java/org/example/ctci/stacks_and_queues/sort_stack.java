@@ -1,6 +1,6 @@
 package org.example.ctci.stacks_and_queues;
 
-import org.example.ctci.linked_lists.util.ListNode;
+import org.example.common.ListNode;
 
 import java.util.EmptyStackException;
 import java.util.Stack;
@@ -34,12 +34,12 @@ public class sort_stack {
             }
             ListNode node = this.head;
             ListNode newNode = new ListNode(data);
-            if (data < node.data) {
+            if (data < node.val) {
                 newNode.next = node;
                 this.head = newNode;
                 return;
             }
-            while (node.next != null && node.next.data < data) {
+            while (node.next != null && node.next.val < data) {
                 node = node.next;
             }
             if (node.next == null) {
@@ -57,11 +57,11 @@ public class sort_stack {
             ListNode currentHead = this.head;
             this.head = currentHead.next;
             currentHead.next = null;
-            return currentHead.data;
+            return currentHead.val;
         }
 
         public int peek() {
-            return this.head.data;
+            return this.head.val;
         }
 
         public boolean isEmpty() {

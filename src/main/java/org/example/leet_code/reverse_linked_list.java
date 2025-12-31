@@ -1,5 +1,7 @@
 package org.example.leet_code;
 
+import org.example.common.ListNode;
+
 public class reverse_linked_list {
     public ListNode reverseList(ListNode head) {
         if (head == null) {
@@ -24,22 +26,5 @@ public class reverse_linked_list {
         head = reverseList(new ListNode(1));
         head = reverseList(new ListNode(1, new ListNode(2)));
         head = reverseList(new ListNode(1, new ListNode(2, new ListNode(3))));
-    }
-
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 }

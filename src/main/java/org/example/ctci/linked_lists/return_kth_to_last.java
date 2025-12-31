@@ -1,7 +1,7 @@
 package org.example.ctci.linked_lists;
 
+import org.example.common.ListNode;
 import org.example.ctci.linked_lists.util.LinkedList;
-import org.example.ctci.linked_lists.util.ListNode;
 
 public class return_kth_to_last {
     private ListNode result = null;
@@ -44,6 +44,6 @@ public class return_kth_to_last {
 //        solve(list, k);
 //        System.out.println(result.data);
 
-        System.out.println(returnKthToLast_Solution_3(list, k).data);
+        System.out.println(returnKthToLast_Solution_3(list, k).val);
     }
 }

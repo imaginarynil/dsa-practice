@@ -1,5 +1,7 @@
 package org.example.leet_code;
 
+import org.example.common.TreeNode;
+
 public class maximum_depth_of_binary_tree {
     public int maxDepth(TreeNode root) {
         if (root == null) {
@@ -17,24 +19,5 @@ public class maximum_depth_of_binary_tree {
         root.right.left = new TreeNode(15);
         root.right.right = new TreeNode(7);
         int x = maxDepth(root);
-    }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }
