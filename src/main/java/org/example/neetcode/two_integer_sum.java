@@ -6,6 +6,8 @@ import java.util.Map;
 public class two_integer_sum {
     /*
      * Only one valid answer exists -> {1,1,1} is not possible because 2 solutions */
+    // t: O(n)
+    // s: O(n)
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> m = new HashMap<>();
         // update map with the latest index to handle duplicates. example: {3, 0, 3}, last 3 is at 2. problem only asks for 2 numbers
@@ -22,12 +24,14 @@ public class two_integer_sum {
         return new int[]{};
     }
 
-    public int[] twoSum_HashMap_OnePass(int[] nums, int target) {
-        Map<Integer, Integer> m = new HashMap<>(); // stores the latest visited element with its index
+    // t: O(n)
+    // s: O(n), hash map
+    public int[] twoSum_Solution2(int[] nums, int target) {
+        Map<Integer, Integer> m = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            int p = target - nums[i];
-            if (m.containsKey(p)) {
-                return new int[]{m.get(p), i};
+            int k = target - nums[i];
+            if (m.containsKey(k)) {
+                return new int[]{m.get(k), i};
             }
             m.put(nums[i], i);
         }
