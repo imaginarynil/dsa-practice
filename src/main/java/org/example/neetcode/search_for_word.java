@@ -19,9 +19,9 @@ public class search_for_word {
         }
         visited[i][j] = true;
         boolean res = search(board, visited, word, i + 1, j, wordIdx + 1) ||
-        search(board, visited, word, i - 1, j, wordIdx + 1) ||
-        search(board, visited, word, i, j + 1, wordIdx + 1) ||
-        search(board, visited, word, i, j - 1, wordIdx + 1);
+                search(board, visited, word, i - 1, j, wordIdx + 1) ||
+                search(board, visited, word, i, j + 1, wordIdx + 1) ||
+                search(board, visited, word, i, j - 1, wordIdx + 1);
         visited[i][j] = false;
         return res;
     }
@@ -30,7 +30,7 @@ public class search_for_word {
         visited = new boolean[board.length][board[0].length];
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
-                if(search(board, visited, word, i, j, 0)) {
+                if (search(board, visited, word, i, j, 0)) {
                     return true;
                 }
             }
