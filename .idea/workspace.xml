@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f57ab24b-3edc-4046-9a8f-35d76ecf95f1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/algorithm/binary_search.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/algorithm/binary_search_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/algorithm/merge_sort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/algorithm/prime_number.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/algorithm/quick_sort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/algorithm/tree_height_and_depth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/common/ListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/common/TreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/arrays_and_strings/check_permutation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/arrays_and_strings/is_unique.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/arrays_and_strings/one_away.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/arrays_and_strings/palindrome_permutation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/arrays_and_strings/rotate_matrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/arrays_and_strings/string_compression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/arrays_and_strings/string_rotation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/arrays_and_strings/urlify.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/arrays_and_strings/zero_matrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/linked_lists/delete_middle_node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/linked_lists/intersection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/linked_lists/loop_detection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/linked_lists/palindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/linked_lists/partition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/linked_lists/remove_dups.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/linked_lists/return_kth_to_last.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/linked_lists/sum_lists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/linked_lists/util/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/stacks_and_queues/animal_shelter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/stacks_and_queues/queue_via_stacks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/stacks_and_queues/sort_stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/stacks_and_queues/stack_min.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/stacks_and_queues/stack_of_plates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/stacks_and_queues/three_in_one.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/stacks_and_queues/util/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/trees_and_graphs/bst_sequences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/trees_and_graphs/build_order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/trees_and_graphs/check_balanced.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/trees_and_graphs/check_subtree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/trees_and_graphs/first_common_ancestor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/trees_and_graphs/list_of_depths.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/trees_and_graphs/minimal_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/trees_and_graphs/route_between_nodes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/trees_and_graphs/successor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/trees_and_graphs/util/BinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ctci/trees_and_graphs/validate_bst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dummy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/g4g/print_a_given_matrix_in_spiral_form.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/add_binary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/add_two_numbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/balanced_binary_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/best_time_to_buy_and_sell_stock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/binary_search.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/climbing_stairs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/coin_change.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/diameter_of_binary_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/first_bad_version.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/flood_fill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/implement_queue_using_stacks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/invert_binary_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/linked_list_cycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/longest_palindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/lowest_common_ancestor_of_a_binary_search_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/majority_element.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/maximum_depth_of_binary_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/maximum_subarray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/merge_two_sorted_lists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/middle_of_the_linked_list.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/ransom_note.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/reverse_linked_list.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/two_sum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/valid_anagram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/valid_palindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/valid_parentheses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leet_code/validate_binary_search_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/anagram_groups.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/binary_tree_diameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/binary_tree_from_preorder_and_inorder_traversal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/buy_and_sell_crypto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/climbing_stairs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/coin_change.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/combination_target_sum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/count_number_of_islands.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/course_schedule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/decode_ways.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/duplicate_integer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/evaluate_reverse_polish_notation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/house_robber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/implement_prefix_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/invert_a_binary_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/is_anagram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/is_palindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/jump_game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/last_stone_weight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/longest_consecutive_sequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/longest_increasing_subsequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/lowest_common_ancestor_in_binary_search_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/max_water_container.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/meeting_schedule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/permutations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/products_of_array_discluding_self.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/remove_node_from_end_of_linked_list.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/same_binary_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/search_2d_matrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/search_for_word.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/spiral_matrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/string_encode_and_decode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/subsets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/subtree_of_a_binary_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/three_integer_sum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/top_k_elements_in_list.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/trapping_rain_water.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/two_integer_sum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/valid_binary_search_tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/valid_sudoku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/neetcode/validate_parentheses.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "imaginarynil"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/imaginarynil/dsa-practice.git",
+    "accountId": "27098608-4698-4b2d-892e-cf402fd789c0"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="3LRymnOaYcnWFcN5aUVkpvgga6j" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f57ab24b-3edc-4046-9a8f-35d76ecf95f1" name="Changes" comment="" />
+      <created>1793431338654</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1793431338654</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
