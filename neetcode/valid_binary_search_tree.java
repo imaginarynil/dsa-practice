@@ -14,8 +14,8 @@ public class valid_binary_search_tree {
         return isValidBSTUtil(root.left, min, root.val) && isValidBSTUtil(root.right, root.val, max);
     }
 
-    // t: O()
-    // s: O()
+    // t: O(n)
+    // s: O(n), recursion
     public boolean isValidBST(TreeNode root) {
         return isValidBSTUtil(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
